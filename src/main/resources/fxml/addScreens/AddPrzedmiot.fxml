@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.add.AddPrzedmiotController">
+   <children>
+      <Label layoutX="12.0" layoutY="46.0" styleClass="label-header" text="Dodawanie nowego przedmiotu" />
+      <Label layoutX="134.0" layoutY="131.0" styleClass="label-bright" text="Podaj nazwę" />
+      <Label layoutX="138.0" layoutY="186.0" styleClass="label-bright" text="Podaj wagę" />
+      <TextField fx:id="nameField" layoutX="271.0" layoutY="128.0" />
+      <TextField fx:id="wagaField" layoutX="271.0" layoutY="182.0" />
+      <Button layoutX="271.0" layoutY="239.0" mnemonicParsing="false" onAction="#add" text="Dodaj" />
+      <Button layoutX="477.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToMenu" text="Menu" />
+      <Label layoutX="7.0" layoutY="376.0" text="Status:" />
+      <Label fx:id="statusField" layoutX="58.0" layoutY="376.0" />
+   </children>
+</AnchorPane>

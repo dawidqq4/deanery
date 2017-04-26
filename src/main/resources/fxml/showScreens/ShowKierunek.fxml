@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.show.ShowKierunekController">
+   <children>
+      <TableView fx:id="tableKierunek" layoutX="11.0" layoutY="76.0" prefHeight="298.0" prefWidth="592.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="nazwaColumn" prefWidth="215.0" text="Nazwa" />
+            <TableColumn fx:id="wydzialColumn" prefWidth="343.0" text="Wydział" />
+         </columns>
+      </TableView>
+      <Label layoutX="205.0" styleClass="label-header" text="Kierunki" />
+      <Button layoutX="486.0" layoutY="29.0" mnemonicParsing="false" onAction="#backToMenu" text="Menu" />
+   </children>
+</AnchorPane>

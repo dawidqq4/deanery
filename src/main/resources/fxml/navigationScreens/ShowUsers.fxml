@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.navigation.ShowUsersController">
+   <children>
+      <TableView fx:id="tableUser" layoutX="11.0" layoutY="76.0" prefHeight="298.0" prefWidth="592.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="76.0">
+         <columns>
+            <TableColumn fx:id="loginColumn" prefWidth="277.0" text="Login" />
+            <TableColumn fx:id="passwordColumn" prefWidth="281.0" text="Hasło" />
+         </columns>
+      </TableView>
+      <Button layoutX="486.0" layoutY="29.0" mnemonicParsing="false" onAction="#backToAdminMenu" text="Menu" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="29.0" />
+      <HBox alignment="CENTER" layoutX="180.0" layoutY="-4.0" prefHeight="66.0" prefWidth="234.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="229.0" styleClass="label-header" text="Użytkownicy" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

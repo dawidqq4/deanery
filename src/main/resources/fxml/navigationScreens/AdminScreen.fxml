@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.navigation.AdminMenuController">
+   <children>
+      <Label layoutX="7.0" layoutY="376.0" text="Status:" />
+      <Label layoutX="59.0" layoutY="376.0" text="Zalogowany" />
+      <Label layoutX="17.0" layoutY="81.0" lineSpacing="2.0" />
+      <Label layoutX="17.0" layoutY="92.0" text="Zatwierdzanie zarejestrowanych pracowników dziekanatu" />
+      <Button layoutX="468.0" layoutY="86.0" mnemonicParsing="false" onAction="#confrimUsers" text="Zatwierdź" />
+      <Label layoutX="17.0" layoutY="144.0" lineSpacing="2.0" text="Wyświetlenie zarejestrowanych pracowników dziekanatu" />
+      <Button layoutX="469.0" layoutY="138.0" mnemonicParsing="false" onAction="#showUsers" text="Wyświetl" />
+      <Label layoutX="17.0" layoutY="196.0" lineSpacing="2.0" text="Usuwanie pracowników z bazy danych dziekanatu" />
+      <Button layoutX="482.0" layoutY="188.0" mnemonicParsing="false" onAction="#delete" text="Usuń" />
+      <Label layoutX="17.0" layoutY="336.0" lineSpacing="2.0" text="Wylogowanie użytkownika" />
+      <Label layoutX="159.0" layoutY="8.0" styleClass="label-header" text="Wybór modułu " />
+      <Label layoutX="17.0" layoutY="248.0" lineSpacing="2.0" text="Przejdź z widoku administracyjnego do widoku roboczego" />
+      <Button layoutX="449.0" layoutY="240.0" mnemonicParsing="false" onAction="#openWorkMenu" text="Widok roboczy" />
+      <Button layoutX="472.0" layoutY="341.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+      <Label layoutX="17.0" layoutY="294.0" lineSpacing="2.0" text="Kończy pracę serwera (Klient może działać nieprawidłowo)" />
+      <Button layoutX="471.0" layoutY="288.0" mnemonicParsing="false" onAction="#exitServer" text="Zakończ" />
+   </children>
+</AnchorPane>

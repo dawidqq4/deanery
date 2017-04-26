@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.add.AddController">
+   <children>
+      <Label layoutX="222.0" layoutY="-12.0" styleClass="label-header" text="Dodaj" />
+      <Label layoutX="14.0" layoutY="63.0" text="Dodaje nowego dziekana" />
+      <Label layoutX="14.0" layoutY="104.0" text="Dodaje nowy wydział" />
+      <Label layoutX="14.0" layoutY="145.0" text="Dodaje nowy kierunek" />
+      <Label layoutX="14.0" layoutY="186.0" text="Dodaje nowy rok" />
+      <Label layoutX="14.0" layoutY="227.0" text="Dodaje nową grupe" />
+      <Label layoutX="15.0" layoutY="271.0" text="Dodaje nowego studenta" />
+      <Label layoutX="320.0" layoutY="104.0" text="Dodaje nową katedre" />
+      <Label layoutX="14.0" layoutY="312.0" text="Dodaje nowego wykładowce" />
+      <Label layoutX="320.0" layoutY="145.0" text="Dodaje nową sale" />
+      <Label layoutX="320.0" layoutY="186.0" text="Dodaj ocenę" />
+      <Button layoutX="205.0" layoutY="57.0" mnemonicParsing="false" onAction="#addDziekan" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="205.0" layoutY="98.0" mnemonicParsing="false" onAction="#addWydzial" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="205.0" layoutY="139.0" mnemonicParsing="false" onAction="#addKierunek" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="205.0" layoutY="180.0" mnemonicParsing="false" onAction="#addRok" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="205.0" layoutY="221.0" mnemonicParsing="false" onAction="#addGrupa" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="205.0" layoutY="265.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="222.0" layoutY="306.0" mnemonicParsing="false" onAction="#addWykladowca" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="496.0" layoutY="57.0" mnemonicParsing="false" onAction="#addPrzedmiot" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Label layoutX="320.0" layoutY="63.0" text="Dodaje nowy przedmiot" />
+      <Button layoutX="496.0" layoutY="98.0" mnemonicParsing="false" onAction="#addKatedra" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="496.0" layoutY="180.0" mnemonicParsing="false" onAction="#addOcena" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="496.0" layoutY="221.0" mnemonicParsing="false" onAction="#addZajecia" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Button layoutX="496.0" layoutY="139.0" mnemonicParsing="false" onAction="#addSala" prefHeight="33.0" prefWidth="95.0" text="Dodaj" />
+      <Label layoutX="320.0" layoutY="227.0" text="Dodaje nowe zajęcia" />
+      <Button layoutX="480.0" layoutY="346.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="33.0" prefWidth="95.0" text="Menu" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.navigation.LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="227.0" layoutY="260.0" mnemonicParsing="false" onAction="#login" opacity="0.5" prefHeight="46.0" prefWidth="114.0" text="Zaloguj" textAlignment="JUSTIFY" textOverrun="CLIP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="121.0" layoutY="153.0" prefHeight="30.0" prefWidth="61.0" styleClass="label-bright" text="Login" />
+      <Label layoutX="121.0" layoutY="201.0" prefHeight="30.0" prefWidth="61.0" styleClass="label-bright" text="Hasło" />
+      <Label layoutX="8.0" layoutY="376.0" text="Status:" />
+      <Label fx:id="statusLabel" layoutX="59.0" layoutY="376.0" text="Brak połączenia z serwerem" />
+      <TextField fx:id="loginField" layoutX="191.0" layoutY="150.0" prefHeight="33.0" prefWidth="185.0" styleClass="text-field" />
+      <PasswordField fx:id="passwordField" layoutX="191.0" layoutY="198.0" prefHeight="37.0" prefWidth="185.0" styleClass="text-field" />
+      <Label layoutX="135.0" layoutY="44.0" prefHeight="62.0" prefWidth="319.0" styleClass="label-header" stylesheets="@../../css/fxStyles.css" text="Panel logowania" />
+      <Button fx:id="exitButton" layoutX="455.0" layoutY="319.0" mnemonicParsing="false" onAction="#exitFrame" opacity="0.5" prefHeight="47.0" prefWidth="112.0" text="Wyjście" />
+      <Button fx:id="registerButton" layoutX="447.0" layoutY="247.0" mnemonicParsing="false" onAction="#register" opacity="0.5" prefHeight="47.0" prefWidth="129.0" text="Rejestracja" />
+   </children>
+</AnchorPane>

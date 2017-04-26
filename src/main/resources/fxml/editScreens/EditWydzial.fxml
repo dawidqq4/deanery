@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.edit.EditWydzialController">
+   <children>
+      <Label layoutX="158.0" styleClass="label-header" text="Edytuj Wydział" />
+      <Label layoutX="42.0" layoutY="85.0" text="Wybierz wydział aby wprowadzić modyfikacje:" />
+      <Label layoutX="51.0" layoutY="136.0" styleClass="label-bright" text="Nowa nazwa" />
+      <Label layoutX="50.0" layoutY="186.0" styleClass="label-bright" text="Nowy adres" />
+      <Label layoutX="40.0" layoutY="235.0" styleClass="label-bright" text="Nowy dziekan" />
+      <TextField fx:id="nameField" layoutX="181.0" layoutY="132.0" prefHeight="37.0" prefWidth="278.0" />
+      <TextField fx:id="addressField" layoutX="181.0" layoutY="182.0" prefHeight="37.0" prefWidth="278.0" />
+      <Button layoutX="219.0" layoutY="289.0" mnemonicParsing="false" onAction="#edit" text="Modyfikuj" />
+      <Button layoutX="450.0" layoutY="341.0" mnemonicParsing="false" onAction="#backToMenu" text="Menu" />
+      <ComboBox fx:id="chooseWydzial" layoutX="367.0" layoutY="77.0" onAction="#chooseDataWydzial" prefHeight="37.0" prefWidth="190.0" promptText="Wybierz" styleClass="label" stylesheets="@../../css/fxStyles.css">
+         <effect>
+            <Blend mode="EXCLUSION" opacity="0.12" />
+         </effect>
+      </ComboBox>
+      <Label layoutX="1.0" layoutY="379.0" text=" Status:" />
+      <Label fx:id="statusLabel" layoutX="53.0" layoutY="379.0" />
+      <ComboBox fx:id="chooseDziekan" layoutX="205.0" layoutY="232.0" onAction="#chooseDataDziekan" prefHeight="37.0" prefWidth="190.0" promptText="Wybierz" styleClass="label" stylesheets="@../../css/fxStyles.css">
+         <effect>
+            <Blend mode="EXCLUSION" opacity="0.12" />
+         </effect>
+      </ComboBox>
+   </children>
+   <effect>
+      <BoxBlur iterations="0" width="0.0" />
+   </effect>
+</AnchorPane>

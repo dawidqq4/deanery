@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="menuFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../../css/fxStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.navigation.MenuController">
+   <children>
+      <Label layoutX="7.0" layoutY="376.0" text="Status:" />
+      <Label layoutX="59.0" layoutY="376.0" text="Zalogowany" />
+      <Label layoutX="17.0" layoutY="81.0" lineSpacing="2.0" text="Dodawanie nowych studentów, grup. Dodawanie pracowników,  " />
+      <Label layoutX="17.0" layoutY="108.0" text="nowych sal, przedmiotów i innych elementów." />
+      <Button layoutX="478.0" layoutY="86.0" mnemonicParsing="false" onAction="#openAddMenu" text="Dodaj" />
+      <Label layoutX="17.0" layoutY="163.0" lineSpacing="2.0" text="Edycja danych pracowników, studentów i innych elementów." />
+      <Button layoutX="477.0" layoutY="146.0" mnemonicParsing="false" onAction="#openEditMenu" text="Edytuj" />
+      <Label layoutX="17.0" layoutY="218.0" lineSpacing="2.0" text="Wyświetlanie danych zawartych w bazie danych uczelni." />
+      <Button layoutX="468.0" layoutY="212.0" mnemonicParsing="false" onAction="#openShowMenu" text="Wyświetl" />
+      <Label layoutX="17.0" layoutY="274.0" lineSpacing="2.0" text="Usuwanie danych z bazy danych uczelni" />
+      <Button layoutX="481.0" layoutY="268.0" mnemonicParsing="false" onAction="#openDeleteMenu" text="Usuń" />
+      <Label layoutX="17.0" layoutY="319.0" lineSpacing="2.0" text="Wylogowanie użytkownika" />
+      <Button fx:id="logoutButton" layoutX="468.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#backToLoginFrame" text="Wyloguj" />
+      <Label layoutX="159.0" layoutY="8.0" styleClass="label-header" text="Wybór modułu " />
+   </children>
+</AnchorPane>
